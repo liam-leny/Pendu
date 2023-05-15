@@ -1,0 +1,60 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ul {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+td {
+  border: 0.5px solid;
+  width: 15px;
+  text-align: center;
+}
+
+.titre {
+  font: 50px "Arial", Futura, sans-serif;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#text {
+  text-decoration: underline;
+  width: 5px;
+}
+
+#pendu {
+  width: 250px;
+  margin-left: 500px;
+}
+
+
+/*
+https://www.w3schools.com/CSS//tryit.asp?filename=trycss_buttons_hover
+.boutonPartie {
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  border: 2px solid #555555;
+  cursor: pointer;
+}
+
+.boutonPartie:hover {
+  background-color: #555555;
+  color: white;
+}
+
+*/
