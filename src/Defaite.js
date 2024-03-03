@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import pendu6 from './dessin/Hangman-6.png'
+import pendu6 from './dessin/Hangman-6.png';
+import './style.css';
 
 const Debut = () => {
   const location = useLocation();
@@ -32,7 +33,7 @@ class Affichage extends React.Component {
       <img id='pendu' src={pendu6} alt="pendu6"/>
       <br></br>
         <Link to="/">
-              <button type="submit">
+              <button className='button' type="submit">
                 Refaire une autre partie
               </button>
         </Link>

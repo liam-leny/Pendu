@@ -17,9 +17,9 @@ td {
   text-align: center;
 }
 
-.titre {
-  font: 50px "Arial", Futura, sans-serif;
-  text-align: center;
+.title {
+  font: 30px "Arial", Futura, sans-serif;
+  text-align: left;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -36,9 +36,8 @@ td {
 }
 
 
-/*
-https://www.w3schools.com/CSS//tryit.asp?filename=trycss_buttons_hover
-.boutonPartie {
+
+.button {
   background-color: white;
   border: none;
   color: black;
@@ -52,9 +51,8 @@ https://www.w3schools.com/CSS//tryit.asp?filename=trycss_buttons_hover
   cursor: pointer;
 }
 
-.boutonPartie:hover {
+.button:hover {
   background-color: #555555;
   color: white;
 }
 
-*/

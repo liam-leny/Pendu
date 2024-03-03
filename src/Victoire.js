@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import './style.css'
 
 const Debut = () => {
   const location = useLocation();
@@ -44,7 +45,7 @@ class Affichage extends React.Component {
       {this.props.score===1 && <h3>La révélation, bien joué ! </h3>}
       <br></br>
         <Link to="/">
-              <button type="submit">
+              <button className='button' type="submit">
                 Refaire une autre partie
               </button>
         </Link>

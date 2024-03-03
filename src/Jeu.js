@@ -6,6 +6,7 @@ import pendu2 from './dessin/Hangman-2.png'
 import pendu3 from './dessin/Hangman-3.png'
 import pendu4 from './dessin/Hangman-4.png'
 import pendu5 from './dessin/Hangman-5.png'
+import './style.css'
 
 const Debut = () => {
   const location = useLocation();
@@ -24,24 +25,7 @@ class Affichage extends React.Component {
     super(props);
     this.state = {
       mot: props.mot,
-      tableau: [
-        // {
-        //   lettre: 'A',
-        //   id: 'A'
-        // },
-        // {
-        //   lettre: 'B',
-        //   id: 'B'
-        // },
-        // {
-        //   lettre: 'C',
-        //   id: 'C'
-        // },
-        // {
-        //   lettre: 'D',
-        //   id: 'D'
-        // },
-      ],
+      tableau: [],
       tirets: new Array(this.props.mot.length).fill('_'),
       score: 7,
       perdu: false,
@@ -236,12 +220,12 @@ class ChoixLettre extends React.Component {
             <p></p>
             <input type="text" value={this.state.value} onChange={this.handleChange} title="Une lettre" pattern='[a-zA-Z]' maxLength={1} required />
           </label>
-          {/* Pour ne pas que l'enoie d'un formulaire redirige vers une autre page
+          {/* Pour ne pas que l'envoie d'un formulaire redirige vers une autre page
               {The default type of a button tag is "submit" which means clicking the button will submit your form 
                (appending the ? to your url).
               To fix your example, you can add type="button" to your buttons }
             */ }
-          <input type="submit" value="Envoyer" />
+          <input className='button' type="submit" value="Envoyer" />
         </form>
       </div>
     )
